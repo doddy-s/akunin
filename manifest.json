@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "AKUNIN",
+    "version": "0.1",
+    "permissions": [
+        "https://twitter.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://twitter.com/*"
+            ],
+            "js": [
+                "akunin.js"
+            ]
+        }
+    ]
+}
