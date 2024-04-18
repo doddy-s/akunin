@@ -1,6 +1,7 @@
 {
     "manifest_version": 3,
     "name": "AKUNIN",
+    "description": "A Chrome Extension for detecting hate speech on X/Twitter using machine learning",
     "version": "0.1",
     "permissions": [
         "https://twitter.com/*"
@@ -11,7 +12,11 @@
                 "https://twitter.com/*"
             ],
             "js": [
-                "akunin.js"
+                "src/scripts/jquery-3.7.1.min.js",
+                "src/scripts/akunin.js"
+            ],
+            "css": [
+                "src/styles/akunin.css"
             ]
         }
     ]
