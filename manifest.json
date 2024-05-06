@@ -6,13 +6,28 @@
     "permissions": [
         "https://twitter.com/*"
     ],
+    "icons": {
+        "128": "icons/akunin-icon.png",
+        "16": "icons/akunin-icon.png",
+        "48": "icons/akunin-icon.png",
+        "96": "icons/akunin-icon.png"
+    },
     "content_scripts": [
         {
             "matches": [
                 "https://twitter.com/*"
             ],
             "js": [
+                "src/scripts/tf.es2017.js",
                 "src/scripts/jquery-3.7.1.min.js",
+                "src/scripts/alayDictionary.js",
+                "src/scripts/stopWords.js",
+                "src/scripts/wordIndex8k.js",
+                "src/scripts/wordIndex36k.js",
+                "src/scripts/indonesianDictionary.js",
+                "src/scripts/indonesianStemmer.js",
+                "src/scripts/wink-porter2-stemmer.js",
+                "src/scripts/preprocessing.js",
                 "src/scripts/akunin.js"
             ],
             "css": [
